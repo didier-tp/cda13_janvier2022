@@ -24,4 +24,7 @@ for(clef in saisonsCouleurs){
 }
 
 console.log("couleur associee au printemps=" + 
-             saisonsCouleurs["printemps"])
+             saisonsCouleurs["printemps"]);
+
+var tabJours= [ "lundi" , "mardi" , "mercredi"];          
+tabJours.forEach((j) => {  var J = j.toUpperCase(); console.log(J);  } );       
