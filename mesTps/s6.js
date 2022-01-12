@@ -1,3 +1,4 @@
+//fonction de type "constructeur de Devise"
 function Devise(code, nom, change){
     this.code = code;
     this.nom = nom;
@@ -26,3 +27,19 @@ tabDevises.push(new Devise("JPY","Yen",123.0));
 for(i in tabDevises){
    tabDevises[i].display();
 }
+
+//objet littéral javascript
+var devise1 = {
+    code : "M1",
+    nom : "Monnaie1",
+    change : 0.9
+};
+
+devise1.change = devise1.change + 0.1; // 1.0
+devise1["change"] = devise1["change"] + 0.1; // 1.1
+console.log("devise1.change = " + devise1.change);
+console.log("devise1 (JSON) = " + JSON.stringify(devise1));
+
+//devise1.display();//devise1.display is not a function
+var estDeTypeDevise = (devise1 instanceof Devise);
+console.log("estDeTypeDevise = " + estDeTypeDevise); //false
