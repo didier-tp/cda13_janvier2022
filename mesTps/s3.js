@@ -22,3 +22,17 @@ for(let j in tab1){
 for(let v of tab1){
     console.log("v=" + v);
 }
+
+function rechercherIndicePourValeur(tab , valeur) {
+    let indiceRes = -1;
+    for(let indice in tab){
+        if(tab[indice] == valeur){
+            indiceRes = indice;
+            break;
+        }
+    }
+    return indiceRes;
+}
+
+var i8 = rechercherIndicePourValeur(tab1 , 8);
+console.log("dans tab1 la valeur 8 est en position/indice = " + i8);
