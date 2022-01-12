@@ -12,6 +12,11 @@ function Devise(code, nom, change){
 var d1 = new Devise("DKK" , "Couronne Danemark" , 7.7);
 d1.couleur = "rouge";//possible mais pas conseillé
 
+var d2 = new Devise("codeD2"); //undefined comme valeurs des paramètres
+                               //non renseignés nom et change
+console.log("d2 as JSON string = " +  JSON.stringify(d2) );
+console.log("d2.nom=" +  d2.change );//d2.nom = undefined
+
 console.log("d1=" + d1); //[oject Object]
 d1.display();
 console.log("d1 as JSON string = " +  JSON.stringify(d1) );
