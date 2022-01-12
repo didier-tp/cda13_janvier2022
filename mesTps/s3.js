@@ -1,3 +1,5 @@
+"use strict";
+// vv = 23; // interdit en mode strict (sans var ni let)
 var age=25; //ou bien 16
 //afficher majeur si age >=18 ou bien mineur sinon
 
