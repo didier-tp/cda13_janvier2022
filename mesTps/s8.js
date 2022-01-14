@@ -22,3 +22,6 @@ p3.incrementerAge = function (){
 //appel:
 p3.incrementerAge();
 console.log("p3="+JSON.stringify(p3));
+
+let x = 3.14159 ;
+console.log("x arrondi =" + x.toFixed(2) );
