@@ -7,7 +7,7 @@ var coeff;
 
 function initialisations(){
 
-    coeff = 360 / Math.PI;
+    coeff = 180 / Math.PI;
 
     eltTxtRadians = document.getElementById("txtRadians");
     eltTxtDegres = document.getElementById("txtDegres");
